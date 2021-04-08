@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+   <script type="text/javascript">
+   var num1,num2;
+   function setvalues()
+   {
+   num1 = Number(document.getElementById("first_number").value);
+   num2 = Number(document.getElementById("second_number").value);
+   }
+   // a function to add values
+   function add()
+   {
+       setvalues();
+       result = num1+num2;
+       alert("The sum is "+result);
+   }
+   // a function to subtract values
+   function subtract()
+   {
+       setvalues();
+       result = num1-num2;
+       alert("The difference is  "+result);
+   }
+   // a function to multiply values
+      function times()
+   {
+       setvalues();
+       result = num1*num2;
+       alert("The operation is "+result);
+   }
+      // a function to divide values
+   function divide()
+   {
+       setvalues();
+       result = num1/num2;
+       alert("The quotient is  "+result);
+   }
+   </script>  
+</head>
+<body>
+
+  <h1>This is a simple Calculator</h1> <br/><br/>
+   <p>Type in your Values to perform simple mathematical operations</p>
+      <label for="first_number"> First Number:</label>
+        <input id="first_number" type="text"/> <br/>
+      <label for="second_number"> Second Number:</label>
+        <input id="second_number" type="text"/> <br/>
+
+      <DIV>
+        <input type="button" onclick="add()" value="add"/> <br/>
+        <input type="button" onclick="subtract()" value="subtract"/><br/>
+        <input type="button" onclick="times()" value="times"/><br/>
+        <input type="button" onclick="divide()" value="division"/>
+       </DIV>
+</body>
+</html> 
